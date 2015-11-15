@@ -1,0 +1,7 @@
+
+.idea/
+node_modules/
+
+# Rendered files
+dev/.css
+public/
