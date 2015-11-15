@@ -9,15 +9,12 @@ var copy = require('gulp-copy');
 gulp.task('sass', function() {
   gulp.src('./dev/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dev/.css'));
+    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('copy', function() {
   gulp.src(['./dev/**/*.html'])
     .pipe(gulp.dest('./public/'));
-
-  gulp.src(['./dev/.css/*.css'])
-    .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('build', ['sass', 'copy'], function() {
