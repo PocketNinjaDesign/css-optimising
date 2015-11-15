@@ -2,12 +2,11 @@
 Just a playground for messing around with npm plugins for CSS.
 
 
+### to run the default build
+
 ```
 $ gulp
 ```
-
-
-### to run the default build
 
 1. compiles SASS
 2. autoprefixes CSS
@@ -15,12 +14,11 @@ $ gulp
 4. copies to public/CSS
 
 
+### to run the full build
+
 ```
 $ gulp all
 ```
-
-
-### to run the full build
 
 1. runs default
 2. (optional) copies contents of public to chosen folder
