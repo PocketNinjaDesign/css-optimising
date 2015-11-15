@@ -11,8 +11,10 @@ Just a playground for messing around with npm plugins for CSS.
  2. autoprefixes CSS
  3. minifies CSS
  4. copies to public/css
- 
+
+
     $ gulp all
+
 
 ### to run the full build,
 
