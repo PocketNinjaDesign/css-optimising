@@ -16,7 +16,7 @@ var minifyCss = require('gulp-minify-css');
 // it to any folder you wish.
 // eg. 'C:/xampp/htdocs/www/public'
 var localDir;
-localDir = 'C:/xampp/htdocs/gulp-test';
+//localDir = 'C:/xampp/htdocs/gulp-test';
 
 
 
