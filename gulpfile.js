@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 // https://www.npmjs.com/package/gulp-sass
 var sass = require('gulp-sass');
-var copy = require('gulp-copy');
 
 // https://www.npmjs.com/package/gulp-autoprefixer
 // https://github.com/postcss/autoprefixer/wiki/support-list
@@ -17,7 +16,7 @@ var minifyCss = require('gulp-minify-css');
 // it to any folder you wish.
 // eg. 'C:/xampp/htdocs/www/public'
 var localDir;
-//localDir = 'C:/xampp/htdocs/css-optimising';
+localDir = 'C:/xampp/htdocs/gulp-test';
 
 
 
@@ -36,11 +35,13 @@ gulp.task('copy', function() {
 
 gulp.task('build', ['sass', 'copy']);
 
-gulp.task('all', ['build'], function() {
+gulp.task('copyToFolder', ['build'], function() {
   if (localDir !== undefined) {
     return gulp.src(['./public/**'])
       .pipe(gulp.dest(localDir));
   }
 });
 
+
+gulp.task('all', ['copyToFolder']);
 gulp.task('default', ['build']);
